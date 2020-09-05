@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.6.1/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/code-common" />
+            <option value="$PROJECT_DIR$/code-machine" />
+            <option value="$PROJECT_DIR$/code-mail" />
+            <option value="$PROJECT_DIR$/code-nacos" />
+            <option value="$PROJECT_DIR$/code-timesheet" />
+            <option value="$PROJECT_DIR$/code-wechat" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

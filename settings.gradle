@@ -1,0 +1,8 @@
+rootProject.name = 'TekCode'
+include 'code-common'
+include 'code-timesheet'
+include 'code-machine'
+include 'code-nacos'
+include 'code-wechat'
+include 'code-mail'
+
