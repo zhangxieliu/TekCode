@@ -5,4 +5,6 @@ include 'code-machine'
 include 'code-nacos'
 include 'code-wechat'
 include 'code-mail'
+include 'code-jdbc'
+include 'code-log'
 

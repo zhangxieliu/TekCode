@@ -1,0 +1,26 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: code-jdbc
+  profiles:
+    active: jdbc
+  cloud:
+    config:
+      server:
+        prefix:
+        default-label: master
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://192.168.31.145:5432/ConfigServerDB?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456789
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 20
+      idle-timeout: 500000
+      max-lifetime: 540000
+      connection-timeout: 60000
+      connection-test-query: SELECT 1

@@ -1,0 +1,33 @@
+# bootstrap.yml  优先加载与application.yml
+#端口号
+server:
+  port: 8888
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: code-jdbc
+  profiles:
+    active: jdbc
+  cloud:
+    config:
+      server:
+        # 请求路径前缀 如果有需要则可以加
+        prefix:
+        default-label: master
+        jdbc:
+          # 此处sql 表和字段可以按照自己的方式创建， 但是后面几个问好中的值顺序不能变
+          #第一个问号‘？’对应的是application，第二个是profile，第三个是LABEL
+          sql: SELECT `attribute`, `VALUE` from Config_Application WHERE APPLICATION_NAME=? AND PROFILE=? AND LABEL=?
+  # mysql 属性配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    # url 中的host地址和端口，还有ConfigServerDB库名根据你的具体情况创建
+    url: jdbc:mysql://192.168.31.145:5432/ConfigServerDB?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+  # 安全中心配置登录用户的账号密码
+  security:
+    user:
+      name: root
+      password: bugwfq
