@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8080
   servlet:
     context-path: /
 spring:
@@ -14,9 +14,9 @@ spring:
         default-label: master
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:mysql://192.168.31.145:5432/ConfigServerDB?useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: 123456789
+    url: jdbc:postgresql://94.191.74.15:5432/tek_db?useUnicode=true&characterEncoding=UTF-8
+    username: nick
+    password: 961201
     hikari:
       minimum-idle: 10
       maximum-pool-size: 20

@@ -7,4 +7,5 @@ include 'code-wechat'
 include 'code-mail'
 include 'code-jdbc'
 include 'code-log'
+include 'code-sms'
 
