@@ -1,2 +1,0 @@
-org/tek/code/Test.java
- org.tek.code.Test
